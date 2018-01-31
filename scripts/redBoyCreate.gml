@@ -1,0 +1,3 @@
+///redBoyCreate()
+
+walkSpeed = 5;

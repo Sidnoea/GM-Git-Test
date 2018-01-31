@@ -21,5 +21,10 @@
   <height>32</height>
   <frames>
     <frame index="0">images\cool_red_sprite_0.png</frame>
+    <frame index="1">images\cool_red_sprite_1.png</frame>
+    <frame index="2">images\cool_red_sprite_2.png</frame>
+    <frame index="3">images\cool_red_sprite_3.png</frame>
+    <frame index="4">images\cool_red_sprite_4.png</frame>
+    <frame index="5">images\cool_red_sprite_5.png</frame>
   </frames>
 </sprite>
