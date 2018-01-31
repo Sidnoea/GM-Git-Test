@@ -6,12 +6,24 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\cool_red_sprite</sprite>
-    <sprite>sprites\sprite1</sprite>
-    <sprite>sprites\Green</sprite>
+    <sprite>sprites\spr_cool_red_sprite</sprite>
+    <sprite>sprites\spr_sprite1</sprite>
+    <sprite>sprites\spr_Green</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <scripts name="Red Boy">
+      <script>scripts\redBoyCreate.gml</script>
+      <script>scripts\redBoyMove.gml</script>
+    </scripts>
+  </scripts>
+  <objects name="objects">
+    <object>objects\obj_redBoy</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\rm_room0</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
