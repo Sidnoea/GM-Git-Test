@@ -10,19 +10,26 @@
     <sprite>sprites\spr_sprite1</sprite>
     <sprite>sprites\spr_Green</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bg_hawaii</background>
+    <background>background\bg_ferret</background>
+    <background>background\bg_flareon</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="Red Boy">
       <script>scripts\redBoyCreate.gml</script>
       <script>scripts\redBoyMove.gml</script>
+      <script>scripts\redBoyExitRoom.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_redBoy</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_room0</room>
+    <room>rooms\rm_hawaii</room>
+    <room>rooms\rm_ferret</room>
+    <room>rooms\rm_flareon</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
