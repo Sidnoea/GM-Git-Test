@@ -17,6 +17,7 @@ if (keyboard_check(vk_down) or keyboard_check(ord('S'))) {
 //Shooting
 if (canShoot and (keyboard_check(vk_space) or keyboard_check(vk_shift))) {
     instance_create(x+sprite_width, y+sprite_height/2, obj_redBullet);
+    audio_play_sound(snd_redShoot, 1, false);
     canShoot = false;
     alarm_set(0, shootDelay);
 }
