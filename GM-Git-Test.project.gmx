@@ -48,7 +48,6 @@
       <script>scripts\redBulletOutsideRoom.gml</script>
     </scripts>
   </scripts>
-  <fonts name="fonts"/>
   <objects name="objects">
     <object>objects\obj_redBoy</object>
     <objects name="Enemies">
