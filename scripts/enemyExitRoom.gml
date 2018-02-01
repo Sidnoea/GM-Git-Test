@@ -1,0 +1,3 @@
+///enemyExitRoom()
+
+instance_destroy();

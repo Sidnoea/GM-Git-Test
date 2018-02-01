@@ -22,9 +22,24 @@
       <script>scripts\redBoyMove.gml</script>
       <script>scripts\redBoyExitRoom.gml</script>
     </scripts>
+    <scripts name="Enemies">
+      <script>scripts\enemyExitRoom.gml</script>
+      <script>scripts\enemyMove.gml</script>
+      <scripts name="Blue Dude">
+        <script>scripts\blueDudeWiggle.gml</script>
+      </scripts>
+      <scripts name="Green Guy">
+        <script>scripts\greenGuyWiggle.gml</script>
+      </scripts>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_redBoy</object>
+    <objects name="Enemies">
+      <object>objects\obj_enemy</object>
+      <object>objects\obj_blueDude</object>
+      <object>objects\obj_greenGuy</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_hawaii</room>
