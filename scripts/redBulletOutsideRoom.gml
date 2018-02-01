@@ -1,0 +1,3 @@
+///redBulletOutsideRoom()
+
+instance_destroy();

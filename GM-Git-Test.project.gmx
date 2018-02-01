@@ -9,6 +9,7 @@
     <sprite>sprites\spr_cool_red_sprite</sprite>
     <sprite>sprites\spr_sprite1</sprite>
     <sprite>sprites\spr_Green</sprite>
+    <sprite>sprites\spr_redBullet</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_hawaii</background>
@@ -19,20 +20,35 @@
   <scripts name="scripts">
     <scripts name="Red Boy">
       <script>scripts\redBoyCreate.gml</script>
-      <script>scripts\redBoyMove.gml</script>
-      <script>scripts\redBoyExitRoom.gml</script>
+      <script>scripts\redBoyStep.gml</script>
+      <script>scripts\redBoyIntersectBoundary.gml</script>
+      <script>scripts\redBoyAlarm0.gml</script>
     </scripts>
     <scripts name="Enemies">
-      <script>scripts\enemyExitRoom.gml</script>
-      <script>scripts\enemyMove.gml</script>
+      <script>scripts\enemyOutsideRoom.gml</script>
+      <script>scripts\enemyStep.gml</script>
       <scripts name="Blue Dude">
-        <script>scripts\blueDudeWiggle.gml</script>
+        <script>scripts\blueDudeStep.gml</script>
       </scripts>
       <scripts name="Green Guy">
-        <script>scripts\greenGuyWiggle.gml</script>
+        <script>scripts\greenGuyStep.gml</script>
       </scripts>
     </scripts>
+    <scripts name="Enemy Generator">
+      <script>scripts\enemyGeneratorCreate.gml</script>
+      <script>scripts\enemyGeneratorAlarm0.gml</script>
+    </scripts>
+    <scripts name="Text Drawer">
+      <script>scripts\textDrawerCreate.gml</script>
+      <script>scripts\textDrawerDraw.gml</script>
+    </scripts>
+    <scripts name="Red Bullet">
+      <script>scripts\redBulletCreate.gml</script>
+      <script>scripts\redBulletCollideEnemy.gml</script>
+      <script>scripts\redBulletOutsideRoom.gml</script>
+    </scripts>
   </scripts>
+  <fonts name="fonts"/>
   <objects name="objects">
     <object>objects\obj_redBoy</object>
     <objects name="Enemies">
@@ -40,6 +56,9 @@
       <object>objects\obj_blueDude</object>
       <object>objects\obj_greenGuy</object>
     </objects>
+    <object>objects\obj_enemyGenerator</object>
+    <object>objects\obj_textDrawer</object>
+    <object>objects\obj_redBullet</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_hawaii</room>

@@ -1,0 +1,3 @@
+///redBulletCreate()
+
+hspeed = 8;
