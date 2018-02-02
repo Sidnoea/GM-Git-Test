@@ -5,8 +5,13 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\snd_redShoot</sound>
-    <sound>sound\snd_enemyExplode</sound>
+    <sounds name="Music">
+      <sound>sound\snd_rarity</sound>
+    </sounds>
+    <sounds name="Sound Effects">
+      <sound>sound\snd_redShoot</sound>
+      <sound>sound\snd_enemyExplode</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_cool_red_sprite</sprite>
@@ -50,6 +55,10 @@
       <script>scripts\redBulletCollideEnemy.gml</script>
       <script>scripts\redBulletOutsideRoom.gml</script>
     </scripts>
+    <scripts name="Jukebox">
+      <script>scripts\jukeboxRoomStart.gml</script>
+      <script>scripts\jukeboxRoomEnd.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_redBoy</object>
@@ -58,9 +67,10 @@
       <object>objects\obj_blueDude</object>
       <object>objects\obj_greenGuy</object>
     </objects>
+    <object>objects\obj_redBullet</object>
     <object>objects\obj_enemyGenerator</object>
     <object>objects\obj_textDrawer</object>
-    <object>objects\obj_redBullet</object>
+    <object>objects\obj_jukebox</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_hawaii</room>

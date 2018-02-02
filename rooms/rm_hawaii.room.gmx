@@ -54,6 +54,7 @@
     <instance objName="obj_redBoy" x="96" y="352" name="inst_B8B829AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemyGenerator" x="0" y="0" name="inst_EBFFAA39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_textDrawer" x="32" y="0" name="inst_75D56081" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_jukebox" x="64" y="0" name="inst_0CD69351" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
