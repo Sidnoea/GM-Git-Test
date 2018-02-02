@@ -1,3 +1,3 @@
 ///redBulletCreate()
 
-hspeed = 8;
+hspeed = 12;

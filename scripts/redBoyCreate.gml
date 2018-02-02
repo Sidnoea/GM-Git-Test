@@ -1,5 +1,5 @@
 ///redBoyCreate()
 
-walkSpeed = 5;
+walkSpeed = 10;
 canShoot = true;
 shootDelay = room_speed/2;
