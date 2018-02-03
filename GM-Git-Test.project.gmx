@@ -15,9 +15,11 @@
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_cool_red_sprite</sprite>
-    <sprite>sprites\spr_sprite1</sprite>
     <sprite>sprites\spr_Green</sprite>
     <sprite>sprites\spr_redBullet</sprite>
+    <sprite>sprites\spr_sprite1</sprite>
+    <sprite>sprites\spr_pink</sprite>
+    <sprite>sprites\spr_orange</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_hawaii</background>
@@ -26,12 +28,6 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <scripts name="Red Boy">
-      <script>scripts\redBoyCreate.gml</script>
-      <script>scripts\redBoyStep.gml</script>
-      <script>scripts\redBoyIntersectBoundary.gml</script>
-      <script>scripts\redBoyAlarm0.gml</script>
-    </scripts>
     <scripts name="Enemies">
       <script>scripts\enemyOutsideRoom.gml</script>
       <script>scripts\enemyStep.gml</script>
@@ -46,35 +42,52 @@
       <script>scripts\enemyGeneratorCreate.gml</script>
       <script>scripts\enemyGeneratorAlarm0.gml</script>
     </scripts>
-    <scripts name="Text Drawer">
-      <script>scripts\textDrawerCreate.gml</script>
-      <script>scripts\textDrawerDraw.gml</script>
+    <scripts name="Jukebox">
+      <script>scripts\jukeboxRoomStart.gml</script>
+      <script>scripts\jukeboxRoomEnd.gml</script>
+    </scripts>
+    <scripts name="Red Boy">
+      <script>scripts\redBoyCreate.gml</script>
+      <script>scripts\redBoyStep.gml</script>
+      <script>scripts\redBoyIntersectBoundary.gml</script>
+      <script>scripts\redBoyAlarm0.gml</script>
     </scripts>
     <scripts name="Red Bullet">
       <script>scripts\redBulletCreate.gml</script>
       <script>scripts\redBulletCollideEnemy.gml</script>
       <script>scripts\redBulletOutsideRoom.gml</script>
     </scripts>
-    <scripts name="Jukebox">
-      <script>scripts\jukeboxRoomStart.gml</script>
-      <script>scripts\jukeboxRoomEnd.gml</script>
+    <scripts name="Text Drawer">
+      <script>scripts\textDrawerCreate.gml</script>
+      <script>scripts\textDrawerDraw.gml</script>
+    </scripts>
+    <scripts name="Pink">
+      <script>scripts\pinkCreate.gml</script>
+      <script>scripts\pinkStep.gml</script>
+      <script>scripts\pinkIntersectBoundary.gml</script>
+    </scripts>
+    <scripts name="Orange">
+      <script>scripts\orangeBoundary1.gml</script>
+      <script>scripts\orangeOutside1.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_redBoy</object>
     <objects name="Enemies">
       <object>objects\obj_enemy</object>
       <object>objects\obj_blueDude</object>
       <object>objects\obj_greenGuy</object>
     </objects>
-    <object>objects\obj_redBullet</object>
     <object>objects\obj_enemyGenerator</object>
-    <object>objects\obj_textDrawer</object>
     <object>objects\obj_jukebox</object>
+    <object>objects\obj_redBoy</object>
+    <object>objects\obj_redBullet</object>
+    <object>objects\obj_textDrawer</object>
+    <object>objects\obj_pink</object>
+    <object>objects\obj_orange</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_hawaii</room>
     <room>rooms\rm_ferret</room>
+    <room>rooms\rm_hawaii</room>
     <room>rooms\rm_flareon</room>
   </rooms>
   <help>
