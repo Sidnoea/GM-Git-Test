@@ -20,6 +20,8 @@
     <sprite>sprites\spr_sprite1</sprite>
     <sprite>sprites\spr_pink</sprite>
     <sprite>sprites\spr_orange</sprite>
+    <sprite>sprites\spr_block</sprite>
+    <sprite>sprites\spr_sword</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_hawaii</background>
@@ -28,14 +30,19 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\moveWithCollision.gml</script>
     <scripts name="Enemies">
+      <script>scripts\enemyCreate.gml</script>
       <script>scripts\enemyOutsideRoom.gml</script>
-      <script>scripts\enemyStep.gml</script>
       <scripts name="Blue Dude">
         <script>scripts\blueDudeStep.gml</script>
       </scripts>
       <scripts name="Green Guy">
         <script>scripts\greenGuyStep.gml</script>
+      </scripts>
+      <scripts name="Orange">
+        <script>scripts\orangeBoundary1.gml</script>
+        <script>scripts\orangeOutside1.gml</script>
       </scripts>
     </scripts>
     <scripts name="Enemy Generator">
@@ -45,6 +52,11 @@
     <scripts name="Jukebox">
       <script>scripts\jukeboxRoomStart.gml</script>
       <script>scripts\jukeboxRoomEnd.gml</script>
+    </scripts>
+    <scripts name="Pink">
+      <script>scripts\pinkCreate.gml</script>
+      <script>scripts\pinkStep.gml</script>
+      <script>scripts\pinkIntersectBoundary.gml</script>
     </scripts>
     <scripts name="Red Boy">
       <script>scripts\redBoyCreate.gml</script>
@@ -57,18 +69,12 @@
       <script>scripts\redBulletCollideEnemy.gml</script>
       <script>scripts\redBulletOutsideRoom.gml</script>
     </scripts>
+    <scripts name="Sword">
+      <script>scripts\swordCollideEnemy.gml</script>
+    </scripts>
     <scripts name="Text Drawer">
       <script>scripts\textDrawerCreate.gml</script>
       <script>scripts\textDrawerDraw.gml</script>
-    </scripts>
-    <scripts name="Pink">
-      <script>scripts\pinkCreate.gml</script>
-      <script>scripts\pinkStep.gml</script>
-      <script>scripts\pinkIntersectBoundary.gml</script>
-    </scripts>
-    <scripts name="Orange">
-      <script>scripts\orangeBoundary1.gml</script>
-      <script>scripts\orangeOutside1.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -76,6 +82,7 @@
       <object>objects\obj_enemy</object>
       <object>objects\obj_blueDude</object>
       <object>objects\obj_greenGuy</object>
+      <object>objects\obj_orange</object>
     </objects>
     <object>objects\obj_enemyGenerator</object>
     <object>objects\obj_jukebox</object>
@@ -83,7 +90,8 @@
     <object>objects\obj_redBullet</object>
     <object>objects\obj_textDrawer</object>
     <object>objects\obj_pink</object>
-    <object>objects\obj_orange</object>
+    <object>objects\obj_block</object>
+    <object>objects\obj_sword</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_ferret</room>

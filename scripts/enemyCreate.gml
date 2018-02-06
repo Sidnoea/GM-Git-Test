@@ -1,0 +1,3 @@
+///enemyCreate()
+
+walkSpeed = 3;
