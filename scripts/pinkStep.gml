@@ -38,10 +38,23 @@ if (abs(y - oldy) < abs(vsp)) {
 }
 
 //Sword
+if (keyboard_check_pressed(vk_left) or keyboard_check_pressed(ord('A'))) {
+    dir = dirs.left;
+}
+else if (keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord('D'))) {
+    dir = dirs.right;
+}
 if (keyboard_check(vk_shift) or keyboard_check(ord('Z'))) {
     instance_activate_object(obj_sword);
     with(obj_sword) {
-        x = other.x + other.sprite_width/2;
+        if (other.dir == dirs.left) {
+            image_xscale = -1;
+            x = other.x - other.sprite_width/2;
+        }
+        else {
+            image_xscale = 1;
+            x = other.x + other.sprite_width/2;
+        }
         y = other.y - sprite_height/2;
     }
 }

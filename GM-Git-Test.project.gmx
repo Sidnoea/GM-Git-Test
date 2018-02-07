@@ -22,6 +22,11 @@
     <sprite>sprites\spr_orange</sprite>
     <sprite>sprites\spr_block</sprite>
     <sprite>sprites\spr_sword</sprite>
+    <sprites name="Menu">
+      <sprite>sprites\spr_menuBack</sprite>
+      <sprite>sprites\spr_menuChoiceBox</sprite>
+      <sprite>sprites\spr_menuArrow</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_hawaii</background>
@@ -30,7 +35,6 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\moveWithCollision.gml</script>
     <scripts name="Enemies">
       <script>scripts\enemyCreate.gml</script>
       <script>scripts\enemyOutsideRoom.gml</script>
@@ -56,12 +60,10 @@
     <scripts name="Pink">
       <script>scripts\pinkCreate.gml</script>
       <script>scripts\pinkStep.gml</script>
-      <script>scripts\pinkIntersectBoundary.gml</script>
     </scripts>
     <scripts name="Red Boy">
       <script>scripts\redBoyCreate.gml</script>
       <script>scripts\redBoyStep.gml</script>
-      <script>scripts\redBoyIntersectBoundary.gml</script>
       <script>scripts\redBoyAlarm0.gml</script>
     </scripts>
     <scripts name="Red Bullet">
@@ -76,6 +78,15 @@
       <script>scripts\textDrawerCreate.gml</script>
       <script>scripts\textDrawerDraw.gml</script>
     </scripts>
+    <scripts name="Players">
+      <script>scripts\playerBoundaryRoom.gml</script>
+    </scripts>
+    <scripts name="Menu">
+      <script>scripts\menuStep.gml</script>
+      <script>scripts\menuCreate.gml</script>
+      <script>scripts\menuDraw.gml</script>
+    </scripts>
+    <script>scripts\moveWithCollision.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Enemies">
@@ -84,19 +95,23 @@
       <object>objects\obj_greenGuy</object>
       <object>objects\obj_orange</object>
     </objects>
+    <objects name="Players">
+      <object>objects\obj_player</object>
+      <object>objects\obj_redBoy</object>
+      <object>objects\obj_pink</object>
+    </objects>
     <object>objects\obj_enemyGenerator</object>
     <object>objects\obj_jukebox</object>
-    <object>objects\obj_redBoy</object>
     <object>objects\obj_redBullet</object>
     <object>objects\obj_textDrawer</object>
-    <object>objects\obj_pink</object>
     <object>objects\obj_block</object>
     <object>objects\obj_sword</object>
+    <object>objects\obj_menu</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_flareon</room>
     <room>rooms\rm_ferret</room>
     <room>rooms\rm_hawaii</room>
-    <room>rooms\rm_flareon</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
